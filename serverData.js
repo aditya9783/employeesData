@@ -87,51 +87,59 @@ var users = [
     name: "Mary Williams",
     empuserid: "3",
     email: "mary.williams@edufect.com",
+    password:"Mary123"
   },
   {
     role: "EMPLOYEE",
     name: "Steve Cook",
     empuserid: "4",
     email: "steve@gmail.com",
+    password:"Steve123"
   },
   {
     role: "EMPLOYEE",
     name: "Catherine",
     empuserid: "5",
     email: "catherine@gmail.com",
+    password:"Cath123"
   },
   {
     role: "EMPLOYEE",
     name: "Eddy Williams",
     empuserid: "6",
     email: "eddy@gmail.com",
+    password:"Eddy123"
   },
   {
     role: "null",
     name: "yogesh sharma",
     empuserid: "7",
     email: "ysys@gmail.com",
+    password:"Yogesh123"
   },
   {
     role: "EMPLOYEE",
     name: "Rahul sharma",
     empuserid: "8",
     email: "rahulsharma@gmail.com",
+    password:"Rahul123"
   },
   {
     role: "EMPLOYEE",
     name: "james william",
     empuserid: "9",
     email: "jameswilliam@edufect.com",
+    password:"James123"
   },
   {
     role: "EMPLOYEE",
     name: "jack wick",
     empuserid: "10",
     email: "jackwick@gmail",
+    password:"Jack1234"
   },
 ];
-const port = process.env.PORT || 2410;
+const port = 2410;
 
 app.post("/empapp/loginuser", function (req, res) {
   let body = { email: req.body.email, password: req.body.password };
